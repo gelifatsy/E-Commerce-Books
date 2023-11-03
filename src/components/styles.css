@@ -1,0 +1,269 @@
+/* header styles */
+
+.header {
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  }
+  
+.navbar-dark {
+  background-color: #0B0B18 !important;
+  border: none !important;
+  border-width:0!important;
+}
+.log-in {
+  display: flex;
+  justify-content: space-around;
+}
+.loged-in {
+  padding-right: 30px;
+}
+
+.best-seller{
+  text-align: center;
+  color: hsl(204, 38%, 97%);
+  background-color: #3C3C46;
+  width: 100%;
+  height: 40px;
+  
+}
+.best-seller > h2 {
+  padding: 0px;
+}
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit:cover;
+  max-height: 30px;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+}
+
+.filters {
+  background-color: #edeff1;
+  color: rgb(11, 10, 10);
+  padding: 20px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 30px;
+  height: 80px;
+}
+
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+}
+.home-container {
+  display: flex;
+  
+}
+.cartbody {
+  display: flex;
+  padding-top: 100px ;
+}
+.slide-container{
+  padding-top: 80px;
+}
+.filterss {
+  background-color: #edf0f4;
+  color: rgb(14, 13, 13);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 10px;
+  height: 86vh;
+  margin-left: 30px;
+}
+.cart-filterss {
+  background-color: #edf0f4;
+  color: rgb(14, 13, 13);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  /* margin: 10px; */
+  height: 45vh;
+  margin: 0px 30px ;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.5rem;
+  /* padding: 2rem 1.5rem; */
+}
+.hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.order-summary {
+
+  border: 1px solid #e3e3e3;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+
+.productContainer {
+  margin-left: 50px;
+  padding: 15px 0px 0px 25px;
+  /* width: 58%; */
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 300px 300px;
+  grid-area: dashed #343a40 1px;
+    
+}
+.container-items {
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+}
+
+.container-img {
+ height: 65%;
+ padding: 35px 35px 0px 35px;
+ 
+}
+.container-body {
+  padding: 0 !important;
+}
+.book-title {
+  font-size: 15px !important; 
+  font-weight: bold 20px;
+}
+.cart-btn {
+  height: 35px ;
+  /* color: #BFBF00, rgb(191,191,0) */
+  
+}
+
+.summary {
+  width: 30%;
+  /* align-self: flex-end; */
+}
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .filterss {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+
+  }
+  .slide-container{
+    visibility: hidden;
+    height: 0;
+  }
+  .filters{
+    visibility: hidden;
+    height: 0;
+  }
+
+  .filterss > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 58%;
+    
+  }
+
+  .search {
+    display: none !important;
+  }
+
+  .container-items {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+/* Slider */
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.card {
+  border: 1px solid rgb(12, 12, 12);
+  background: rgb(236, 234, 234);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 300px;
+  color: #343a40;
+  cursor: pointer;
+}
+.slide{
+  width: 90%;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+}
+
+
+.card-top h1 {
+  font-size: 0.9rem;
+  margin: 20px;
+}
+
+.card-top > img {
+  width: 100%;
+  height: 200px;
+  object-fit:cover ;
+  background: black;
+  padding: 0px 50px;
+  
+}
+
+.card-bottom {
+  /* background: #343a40; */
+  margin: 10px 20px 50px;
+}
+
+.slick-prev:before, .slick-next:before { 
+  color:#343a40 !important;
+}
+/* login form  */
+/* .form-main{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeff1;
+  height: 100vh;
+ 
+} */

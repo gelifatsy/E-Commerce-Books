@@ -1,0 +1,56 @@
+.modalBackground {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+     
+  /* background-color: rgba(200, 200, 200); */
+  /* position: fixed; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.modalContainer {
+  width: relative;
+  height: auto;
+  border-radius: 12px;
+  background-color: #edf0f4;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.form-container {
+  /* background-color: #edeff1; */
+  width: 80%;
+  align-items: center;
+ 
+}
+small {
+  color: red;
+}
+.create-account{
+  text-decoration: underline;
+}
+.create-account:hover{
+  color: rgb(5, 5, 255);
+}
+input {
+  border-radius:10px !important;
+}
+/* .modalbackground-1{
+  width: 100vw !important;
+   background-color: rgba(0,0,0,1) !important;
+} */
